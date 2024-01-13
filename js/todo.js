@@ -36,7 +36,6 @@
             tasks.push(taskElement.textContent);
         });
 
-        // Save tasks array to cookies
         document.cookie = `tasks=${JSON.stringify(tasks)}`;
     }
 
