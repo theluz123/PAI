@@ -1,0 +1,86 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body{   
+    font-family: 'Salsa', cursive;
+    background-image: linear-gradient(to bottom right, rgb(187, 162, 92),  rgb(92, 187, 138));
+}
+
+
+#todoList {
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+#taskInput {
+    width: 70%;
+    margin-top: 5px;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#addTaskBtn {
+    width: 30%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.deleteTaskBtn {
+    background-color: #ff3333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button{
+    margin-top: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    background-color: rgb(187, 138, 92);
+    border-radius: 3px;
+    height: 30px;
+    min-width: 100px;
+    box-shadow: 2px 2px black;
+    font-weight: bold;
+}
+
+button:hover{
+    transform: scale(1);
+    transition: 0.3s;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList - Panel Logowania</title>
+    <link rel="stylesheet" href="css/logowanie.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+    <div id="login-form" class="login1">
+        <h1 class="LogH">Panel Logowania</h1>
+        <form id="login-form" class="LogForm">
+          <label for="username">Login</label>
+          <input type="text" class="LogInput" id="username" name="username" required><br>
+    
+          <label for="password">Hasło</label>
+          <input type="password" class="LogInput" id="password" name="password" required><br>
+    
+          <button type="button" class="BUTT" onclick="checkLogin()">Zaloguj się</button>
+        </form>
+      </div>
+
+    <script src="js/logowanie.js"></script>
+</body>
+</html>
