@@ -1,4 +1,4 @@
-    // Load tasks from cookies when the page is loaded
+
     window.onload = function () {
         loadTasksFromCookies();
     };
@@ -17,7 +17,6 @@
             tasksContainer.appendChild(newTask);
             taskInput.value = '';
 
-            // Save tasks to cookies
             saveTasksToCookies();
         }
     }
@@ -26,7 +25,6 @@
         var taskItem = deleteBtn.parentNode;
         taskItem.parentNode.removeChild(taskItem);
 
-        // Save tasks to cookies after deletion
         saveTasksToCookies();
     }
 
